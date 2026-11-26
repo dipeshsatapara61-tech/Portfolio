@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090E17" />
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#162238" />
+      <stop offset="100%" stop-color="#111B2C" />
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="1200" height="700" rx="16" fill="url(#dbBg)" stroke="#1E293B" stroke-width="2" />
+  
+  <!-- Window Header / Browser Bar -->
+  <rect width="1200" height="52" rx="16" fill="#131D2E" />
+  <circle cx="36" cy="26" r="6" fill="#EF4444" opacity="0.8" />
+  <circle cx="56" cy="26" r="6" fill="#F59E0B" opacity="0.8" />
+  <circle cx="76" cy="26" r="6" fill="#10B981" opacity="0.8" />
+  
+  <rect x="120" y="14" width="360" height="24" rx="6" fill="#0B1120" stroke="#1E293B" stroke-width="1" />
+  <text x="140" y="30" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">olist_ecommerce_bi_analytics.pbix</text>
+  
+  <rect x="940" y="14" width="100" height="24" rx="6" fill="#1E293B" />
+  <text x="955" y="30" fill="#38BDF8" font-family="Inter, sans-serif" font-size="11" font-weight="600">SQL Verified</text>
+  
+  <rect x="1055" y="14" width="115" height="24" rx="6" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1" />
+  <text x="1070" y="30" fill="#38BDF8" font-family="Inter, sans-serif" font-size="11" font-weight="600">Power BI Model</text>
+
+  <!-- Subheader -->
+  <text x="40" y="90" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="20" font-weight="700">Olist E-Commerce Business Intelligence Overview</text>
+  <text x="40" y="112" fill="#94A3B8" font-family="Inter, sans-serif" font-size="13">Multi-year sales performance, customer trends, order logistics, and category analytics</text>
+
+  <!-- 4 KPI CARDS -->
+  <!-- KPI 1 -->
+  <g transform="translate(40, 135)" filter="url(#cardShadow)">
+    <rect width="260" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="260" height="3" rx="1.5" fill="#38BDF8" />
+    <text x="20" y="34" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12" font-weight="500">TOTAL REVENUE (GMV)</text>
+    <text x="20" y="68" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="24" font-weight="700">R$ 15.82M</text>
+    <rect x="175" y="48" width="65" height="22" rx="4" fill="#10B981" fill-opacity="0.15" />
+    <text x="185" y="63" fill="#10B981" font-family="Inter, sans-serif" font-size="11" font-weight="600">+14.2% YoY</text>
+  </g>
+
+  <!-- KPI 2 -->
+  <g transform="translate(325, 135)" filter="url(#cardShadow)">
+    <rect width="260" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="260" height="3" rx="1.5" fill="#818CF8" />
+    <text x="20" y="34" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12" font-weight="500">TOTAL ORDERS DELIVERED</text>
+    <text x="20" y="68" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="24" font-weight="700">99,441</text>
+    <rect x="180" y="48" width="60" height="22" rx="4" fill="#38BDF8" fill-opacity="0.15" />
+    <text x="190" y="63" fill="#38BDF8" font-family="Inter, sans-serif" font-size="11" font-weight="600">Active</text>
+  </g>
+
+  <!-- KPI 3 -->
+  <g transform="translate(610, 135)" filter="url(#cardShadow)">
+    <rect width="260" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="260" height="3" rx="1.5" fill="#F59E0B" />
+    <text x="20" y="34" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12" font-weight="500">AVG ORDER VALUE (AOV)</text>
+    <text x="20" y="68" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="24" font-weight="700">R$ 159.80</text>
+    <rect x="175" y="48" width="65" height="22" rx="4" fill="#F59E0B" fill-opacity="0.15" />
+    <text x="185" y="63" fill="#F59E0B" font-family="Inter, sans-serif" font-size="11" font-weight="600">Optimized</text>
+  </g>
+
+  <!-- KPI 4 -->
+  <g transform="translate(895, 135)" filter="url(#cardShadow)">
+    <rect width="265" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="265" height="3" rx="1.5" fill="#10B981" />
+    <text x="20" y="34" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12" font-weight="500">ON-TIME DELIVERY RATE</text>
+    <text x="20" y="68" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="24" font-weight="700">92.4%</text>
+    <rect x="180" y="48" width="65" height="22" rx="4" fill="#10B981" fill-opacity="0.15" />
+    <text x="190" y="63" fill="#10B981" font-family="Inter, sans-serif" font-size="11" font-weight="600">Target Met</text>
+  </g>
+
+  <!-- MAIN CHART: Monthly Revenue & Trend Analysis -->
+  <g transform="translate(40, 260)" filter="url(#cardShadow)">
+    <rect width="695" height="400" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1" />
+    <text x="24" y="38" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="15" font-weight="600">Monthly Sales Velocity & Order Growth Trend</text>
+    <text x="24" y="58" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">SQL Aggregated Time-series analysis across Brazilian states</text>
+
+    <!-- Chart Grid Lines -->
+    <line x1="50" y1="120" x2="650" y2="120" stroke="#1E293B" stroke-dasharray="4 4" />
+    <text x="20" y="124" fill="#64748B" font-family="Inter, sans-serif" font-size="10">2.0M</text>
+    <line x1="50" y1="180" x2="650" y2="180" stroke="#1E293B" stroke-dasharray="4 4" />
+    <text x="20" y="184" fill="#64748B" font-family="Inter, sans-serif" font-size="10">1.5M</text>
+    <line x1="50" y1="240" x2="650" y2="240" stroke="#1E293B" stroke-dasharray="4 4" />
+    <text x="20" y="244" fill="#64748B" font-family="Inter, sans-serif" font-size="10">1.0M</text>
+    <line x1="50" y1="300" x2="650" y2="300" stroke="#1E293B" stroke-dasharray="4 4" />
+    <text x="20" y="304" fill="#64748B" font-family="Inter, sans-serif" font-size="10">0.5M</text>
+    <line x1="50" y1="340" x2="650" y2="340" stroke="#334155" stroke-width="1.5" />
+
+    <!-- X Axis Labels -->
+    <text x="60" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q1-17</text>
+    <text x="135" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q2-17</text>
+    <text x="215" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q3-17</text>
+    <text x="295" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q4-17</text>
+    <text x="375" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q1-18</text>
+    <text x="455" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q2-18</text>
+    <text x="535" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q3-18</text>
+    <text x="615" y="360" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Q4-18</text>
+
+    <!-- Area Fill -->
+    <polygon points="75,320 150,290 230,260 310,210 390,170 470,140 550,110 630,95 630,340 75,340" fill="url(#areaGrad)" />
+
+    <!-- Area Line -->
+    <polyline points="75,320 150,290 230,260 310,210 390,170 470,140 550,110 630,95" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Secondary Line (Orders Volume) -->
+    <polyline points="75,330 150,310 230,285 310,245 390,205 470,185 550,155 630,135" fill="none" stroke="#818CF8" stroke-width="2.5" stroke-dasharray="6 3" stroke-linecap="round" />
+
+    <!-- Data Points -->
+    <circle cx="230" cy="260" r="4.5" fill="#38BDF8" stroke="#0B1120" stroke-width="2" />
+    <circle cx="390" cy="170" r="4.5" fill="#38BDF8" stroke="#0B1120" stroke-width="2" />
+    <circle cx="550" cy="110" r="4.5" fill="#38BDF8" stroke="#0B1120" stroke-width="2" />
+    <circle cx="630" cy="95" r="5" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2" />
+    
+    <!-- Callout on peak -->
+    <rect x="545" y="58" width="95" height="26" rx="5" fill="#1E293B" stroke="#38BDF8" stroke-width="1" />
+    <text x="555" y="75" fill="#38BDF8" font-family="Inter, sans-serif" font-size="11" font-weight="700">Peak: R$ 2.41M</text>
+  </g>
+
+  <!-- SECONDARY CHART: Top Product Categories -->
+  <g transform="translate(760, 260)" filter="url(#cardShadow)">
+    <rect width="400" height="215" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1" />
+    <text x="24" y="34" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="14" font-weight="600">Top Categories by Revenue</text>
+
+    <!-- Bars -->
+    <!-- Cat 1 -->
+    <text x="24" y="70" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Bed, Bath &amp; Table</text>
+    <rect x="160" y="58" width="180" height="14" rx="4" fill="#38BDF8" />
+    <text x="350" y="70" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="11" font-weight="600">R$ 1.71M</text>
+
+    <!-- Cat 2 -->
+    <text x="24" y="105" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Health &amp; Beauty</text>
+    <rect x="160" y="93" width="155" height="14" rx="4" fill="#60A5FA" />
+    <text x="325" y="105" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="11" font-weight="600">R$ 1.44M</text>
+
+    <!-- Cat 3 -->
+    <text x="24" y="140" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Computers &amp; Acc.</text>
+    <rect x="160" y="128" width="130" height="14" rx="4" fill="#818CF8" />
+    <text x="300" y="140" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="11" font-weight="600">R$ 1.15M</text>
+
+    <!-- Cat 4 -->
+    <text x="24" y="175" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Furniture Decor</text>
+    <rect x="160" y="163" width="105" height="14" rx="4" fill="#A78BFA" />
+    <text x="275" y="175" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="11" font-weight="600">R$ 0.94M</text>
+  </g>
+
+  <!-- TERTIARY CHART: Payment Methods & Satisfaction -->
+  <g transform="translate(760, 495)" filter="url(#cardShadow)">
+    <rect width="400" height="165" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1" />
+    <text x="24" y="32" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="14" font-weight="600">Payment Breakdown &amp; Rating</text>
+
+    <!-- Progress segment bar -->
+    <rect x="24" y="52" width="220" height="12" rx="4" fill="#38BDF8" />
+    <rect x="248" y="52" width="60" height="12" rx="4" fill="#818CF8" />
+    <rect x="312" y="52" width="25" height="12" rx="4" fill="#F59E0B" />
+    <rect x="341" y="52" width="15" height="12" rx="4" fill="#10B981" />
+
+    <text x="24" y="85" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Credit Card (74%)</text>
+    <text x="145" y="85" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Boleto (19%)</text>
+    <text x="250" y="85" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Voucher (5%)</text>
+
+    <line x1="24" y1="105" x2="376" y2="105" stroke="#1E293B" stroke-width="1" />
+    <text x="24" y="135" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Avg Review Score:</text>
+    <text x="145" y="137" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="16" font-weight="700">4.18 / 5.0 ⭐</text>
+    <text x="270" y="135" fill="#38BDF8" font-family="Inter, sans-serif" font-size="11">SQL Stored Proc.</text>
+  </g>
+</svg>

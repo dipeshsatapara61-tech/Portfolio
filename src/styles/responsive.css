@@ -1,0 +1,96 @@
+/* Responsive Stylesheet */
+
+@media (max-width: 1024px) {
+  :root {
+    --section-spacing: 85px;
+  }
+  
+  .hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+    text-align: center;
+  }
+  
+  .hero-left {
+    align-items: center !important;
+  }
+
+  .hero-buttons {
+    justify-content: center !important;
+  }
+  
+  .hero-socials {
+    justify-content: center !important;
+  }
+
+  .hero-visual-wrapper {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .project-featured-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 70px;
+  }
+
+  .nav-desktop-links,
+  .nav-resume-btn {
+    display: none !important;
+  }
+
+  .mobile-menu-toggle {
+    display: flex !important;
+  }
+
+  .about-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-heading {
+    font-size: 2.15rem !important;
+  }
+
+  .floating-card-1,
+  .floating-card-2 {
+    position: static !important;
+    margin-top: 14px;
+    width: 100% !important;
+  }
+
+  .hero-visual-card {
+    padding: 24px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
